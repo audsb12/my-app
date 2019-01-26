@@ -1,0 +1,10 @@
+<ul>
+  <li *ngFor="let st of students"
+    [class.selected] = "st == selectedStudent"
+    (click) = "onselectedStudent(st)"> {{st.id}} {{st.name}}
+  
+  </li>
+
+  
+
+</ul>

@@ -6,6 +6,7 @@ import { HeaderModule } from './header/header.module';
 import { FooterModule } from './footer/footer.module';
 import { BodyModule } from './body/body.module';
 import { GreeterModule } from './greeter/greeter.module';
+import { StudentsModule } from './students/students.module';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { GreeterModule } from './greeter/greeter.module';
     FormsModule,
     GreeterModule,
     BrowserModule,
+    StudentsModule,
     FooterModule
 
   ],
