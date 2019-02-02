@@ -7,10 +7,12 @@ import { FooterModule } from './footer/footer.module';
 import { BodyModule } from './body/body.module';
 import { GreeterModule } from './greeter/greeter.module';
 import { StudentsModule } from './students/students.module';
+import { AComponent } from './a/a.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AComponent
   ],
 
   imports: [

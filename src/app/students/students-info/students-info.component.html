@@ -1,2 +1,4 @@
-<label>Student: </label>
-<input [(ngModel)]= "studentinfo.name">
+<div *ngIf="studentinfo">
+    <label>Student: </label>
+    <input [(ngModel)]= "studentinfo.name">
+    </div>
