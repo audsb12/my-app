@@ -9,6 +9,8 @@ import { GreeterModule } from './greeter/greeter.module';
 import { StudentsModule } from './students/students.module';
 import { AComponent } from './a/a.component';
 import { AppRoutingModule } from './app-routing.module';
+import { AboutComponent } from './about/about.component';
+import { AboutModule } from './about/about.module';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,8 @@ import { AppRoutingModule } from './app-routing.module';
     BrowserModule,
     StudentsModule,
     FooterModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AboutModule
 
   ],
 
