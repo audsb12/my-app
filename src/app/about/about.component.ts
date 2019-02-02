@@ -10,6 +10,7 @@ import { query } from '@angular/core/src/render3';
 export class AboutComponent implements OnInit {
   query = 'Manila';
   clouds: string;
+  main: string;
 
   constructor(private weatherService: WeatherService) { }
 
@@ -23,6 +24,8 @@ export class AboutComponent implements OnInit {
     .subscribe((data: any)=> {
       console.log(data);
       this.clouds = data.weather[0].description;
+      this.main = data.weather[0].main;
     });
   }
-}
+  }
+
