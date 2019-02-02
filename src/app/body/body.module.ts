@@ -7,7 +7,8 @@ import { StudentsModule } from '../students/students.module';
   declarations: [BodyComponent],
   imports: [
     CommonModule,
-    StudentsModule
+    StudentsModule,
+  
   ],
 
   exports:[BodyComponent]
