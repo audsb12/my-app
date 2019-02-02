@@ -7,15 +7,14 @@ import { FooterModule } from './footer/footer.module';
 import { BodyModule } from './body/body.module';
 import { GreeterModule } from './greeter/greeter.module';
 import { StudentsModule } from './students/students.module';
-import { AComponent } from './a/a.component';
 import { AppRoutingModule } from './app-routing.module';
-import { AboutComponent } from './about/about.component';
 import { AboutModule } from './about/about.module';
+import {HttpClientModule} from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
-    AppComponent,
-    AComponent
+    AppComponent
   ],
 
   imports: [
@@ -27,7 +26,8 @@ import { AboutModule } from './about/about.module';
     StudentsModule,
     FooterModule,
     AppRoutingModule,
-    AboutModule
+    AboutModule,
+    HttpClientModule
 
   ],
 

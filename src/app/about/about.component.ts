@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { WeatherService } from '../service/weather.service';
+import { query } from '@angular/core/src/render3';
 
 @Component({
   selector: 'app-about',
@@ -6,10 +8,21 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./about.component.css']
 })
 export class AboutComponent implements OnInit {
+  query = 'Manila';
+  clouds: string;
 
-  constructor() { }
+  constructor(private weatherService: WeatherService) { }
 
   ngOnInit() {
+    this.loadWeatherDetails();
   }
 
+
+  loadWeatherDetails(){
+    this.weatherService.getWeather(this.query)
+    .subscribe((data: any)=> {
+      console.log(data);
+      this.clouds = data.weather[0].description;
+    });
+  }
 }
