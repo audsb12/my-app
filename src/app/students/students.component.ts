@@ -18,7 +18,8 @@ export class StudentsComponent implements OnInit {
   }
 
 loadStudents(){
-  this.students = this.studentsServices.getStudents();
+  this.studentsServices.getStudents()
+  .subscribe(students => this.students = STUDENTS); 
 }
 
   onselectedStudent(st: student_class) {
